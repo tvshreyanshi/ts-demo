@@ -1,10 +1,17 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <game-component />
   </nav>
-  <router-view/>
+  <!-- <router-view/> -->
 </template>
+<script>
+import GameComponent from './components/GameComponent.vue'
+export default {
+  components: {
+    GameComponent,
+  }
+}
+</script>
 
 <style>
 #app {
